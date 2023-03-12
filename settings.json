@@ -33,6 +33,21 @@
             "comment": ""
         },
         {
+            "endpoint": "colrev_built_in.dblp",
+            "filename": "data/search/DBLP.bib",
+            "search_type": "DB",
+            "search_parameters": {
+                "scope": {
+                    "venue_key": "journals/isf",
+                    "journal_abbreviated": "Inf. Syst. Frontiers"
+                }
+            },
+            "load_conversion_package_endpoint": {
+                "endpoint": "colrev_built_in.bibtex"
+            },
+            "comment": ""
+        },
+        {
             "endpoint": "colrev_built_in.pdfs_dir",
             "filename": "data/search/pdfs.bib",
             "search_type": "PDFS",
