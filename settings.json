@@ -78,9 +78,6 @@
                 "similarity": 0.8,
                 "prep_package_endpoints": [
                     {
-                        "endpoint": "colrev_built_in.prep_exclude_complementary_materials"
-                    },
-                    {
                         "endpoint": "colrev_built_in.resolve_crossrefs"
                     },
                     {
@@ -94,9 +91,6 @@
                     },
                     {
                         "endpoint": "colrev_built_in.exclude_complementary_materials"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.get_masterdata_from_local_index"
                     },
                     {
                         "endpoint": "colrev_built_in.exclude_languages"
@@ -115,21 +109,6 @@
                     },
                     {
                         "endpoint": "colrev_built_in.get_year_from_vol_iss_jour"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.get_masterdata_from_crossref"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.get_masterdata_from_pubmed"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.get_masterdata_from_europe_pmc"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.get_masterdata_from_dblp"
-                    },
-                    {
-                        "endpoint": "colrev_built_in.get_masterdata_from_open_library"
                     }
                 ]
             }
@@ -148,7 +127,11 @@
         "dedupe_package_endpoints": [
             {
                 "endpoint": "colrev_built_in.curation_full_outlet_dedupe",
-                "selected_source": "data/search/CROSSREF.bib"
+                "selected_source": "data/search/crossref_jissn_15729419.bib"
+            },
+            {
+                "endpoint": "colrev_built_in.curation_full_outlet_dedupe",
+                "selected_source": "data/search/DBLP.bib"
             },
             {
                 "endpoint": "colrev_built_in.curation_full_outlet_dedupe",
@@ -173,7 +156,7 @@
     },
     "pdf_get": {
         "pdf_path_type": "symlink",
-        "pdf_required_for_screen_and_synthesis": true,
+        "pdf_required_for_screen_and_synthesis": false,
         "rename_pdfs": true,
         "pdf_get_package_endpoints": [],
         "pdf_get_man_package_endpoints": [
@@ -213,11 +196,7 @@
     "screen": {
         "explanation": "All records are automatically included in the screen.",
         "criteria": {},
-        "screen_package_endpoints": [
-            {
-                "endpoint": "colrev_built_in.conditional_screen"
-            }
-        ]
+        "screen_package_endpoints": []
     },
     "data": {
         "data_package_endpoints": [
