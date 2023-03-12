@@ -27,7 +27,7 @@ jobs:
           colrev load
           colrev prep
           colrev prep --polish
-          colrev dedupe
+          colrev dedupe -f
           colrev prescreen
           colrev pdfs
           colrev screen
