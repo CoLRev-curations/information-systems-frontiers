@@ -227,10 +227,12 @@
                 "curation_url": "TODO",
                 "curated_masterdata": true,
                 "masterdata_restrictions": {
-                    "from_year": 1900,
-                    "to_year": 5000,
-                    "volume": true,
-                    "number": true
+                    "1900": {
+                        "ENTRYTYPE": "article",
+                        "volume": true,
+                        "number": true,
+                        "journal": "Information Systems Frontiers"
+                    }
                 },
                 "curated_fields": [
                     "doi",
