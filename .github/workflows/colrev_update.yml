@@ -23,6 +23,7 @@ jobs:
           git config --global url.https://github.com/.insteadOf git://github.com/
           git branch colrev-update
           git checkout colrev-update
+          colrev upgrade
           colrev search -f
           colrev load
           colrev prep
