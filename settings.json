@@ -29,7 +29,9 @@
             "search_type": "DB",
             "search_parameters": {
                 "scope": {
-                    "issn": "15729419"
+                    "issn": [
+                        "15729419"
+                    ]
                 }
             },
             "comment": ""
