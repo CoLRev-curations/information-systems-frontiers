@@ -19,14 +19,14 @@
         "id_pattern": "three_authors_year",
         "share_stat_req": "processed",
         "delay_automated_processing": false,
-        "colrev_version": "0.9.2",
+        "colrev_version": "0.10.1",
         "auto_upgrade": true
     },
     "sources": [
         {
             "endpoint": "colrev.crossref",
             "filename": "data/search/crossref_jissn_15729419.bib",
-            "search_type": "DB",
+            "search_type": "TOC",
             "search_parameters": {
                 "scope": {
                     "issn": [
@@ -39,7 +39,7 @@
         {
             "endpoint": "colrev.dblp",
             "filename": "data/search/DBLP.bib",
-            "search_type": "DB",
+            "search_type": "TOC",
             "search_parameters": {
                 "scope": {
                     "venue_key": "journals/isf",
@@ -49,9 +49,9 @@
             "comment": ""
         },
         {
-            "endpoint": "colrev.pdfs_dir",
+            "endpoint": "colrev.files_dir",
             "filename": "data/search/pdfs.bib",
-            "search_type": "PDFS",
+            "search_type": "FILES",
             "search_parameters": {
                 "scope": {
                     "path": "data/pdfs"
@@ -102,7 +102,7 @@
                         "endpoint": "colrev.get_year_from_vol_iss_jour"
                     },
                     {
-                        "endpoint": "colrev.curation_prep"
+                        "endpoint": "colrev.colrev_curation"
                     }
                 ]
             }
