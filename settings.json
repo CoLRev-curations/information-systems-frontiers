@@ -28,11 +28,8 @@
             "filename": "data/search/crossref_jissn_15729419.bib",
             "search_type": "TOC",
             "search_parameters": {
-                "scope": {
-                    "issn": [
-                        "15729419"
-                    ]
-                }
+                "url": "https://api.crossref.org/journals/15729419/works",
+                "version": "1.0.0"
             },
             "comment": ""
         },
