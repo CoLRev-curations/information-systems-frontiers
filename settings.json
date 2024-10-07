@@ -54,6 +54,9 @@
             "search_type": "FILES",
             "search_parameters": {
                 "scope": {
+                    "subdir_pattern": "volume_number",
+                    "type": "journal",
+                    "journal": "Information Systems Frontiers",
                     "path": "data/pdfs"
                 }
             },
