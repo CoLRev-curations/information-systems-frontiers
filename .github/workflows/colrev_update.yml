@@ -21,7 +21,6 @@ jobs:
           cd colrev
           python -m pip install poetry
           poetry install
-          poetry run --directory ${{ runner.temp }}/colrev colrev install all_packages
       - name: Setup git
         run: |
           git config --global user.name "CoLRev update"
@@ -36,7 +35,7 @@ jobs:
           git checkout -b ${{ env.BRANCH_NAME }}
       - name: Run CoLRev update
         run: |
-          poetry run --directory ${{ runner.temp }}/colrev colrev install .
+          poetry run colrev install .
           poetry run --directory ${{ runner.temp }}/colrev colrev search -f
           poetry run --directory ${{ runner.temp }}/colrev colrev load
           poetry run --directory ${{ runner.temp }}/colrev colrev prep
