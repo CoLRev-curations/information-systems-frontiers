@@ -19,47 +19,10 @@
         "id_pattern": "three_authors_year",
         "share_stat_req": "processed",
         "delay_automated_processing": false,
-        "colrev_version": "0.13.1",
+        "colrev_version": "0.14.0",
         "auto_upgrade": true
     },
-    "sources": [
-        {
-            "endpoint": "colrev.crossref",
-            "filename": "data/search/crossref_jissn_15729419.bib",
-            "search_type": "TOC",
-            "search_parameters": {
-                "url": "https://api.crossref.org/journals/15729419/works",
-                "version": "1.0.0"
-            },
-            "comment": ""
-        },
-        {
-            "endpoint": "colrev.dblp",
-            "filename": "data/search/DBLP.bib",
-            "search_type": "TOC",
-            "search_parameters": {
-                "scope": {
-                    "venue_key": "journals/isf",
-                    "journal_abbreviated": "Inf. Syst. Frontiers"
-                }
-            },
-            "comment": ""
-        },
-        {
-            "endpoint": "colrev.files_dir",
-            "filename": "data/search/pdfs.bib",
-            "search_type": "FILES",
-            "search_parameters": {
-                "scope": {
-                    "subdir_pattern": "volume_number",
-                    "type": "journal",
-                    "journal": "Information Systems Frontiers",
-                    "path": "data/pdfs"
-                }
-            },
-            "comment": ""
-        }
-    ],
+    "sources": [],
     "search": {
         "retrieve_forthcoming": false
     },
